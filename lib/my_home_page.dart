@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Basic Widgets',
         ),
       ),
@@ -24,13 +24,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Counter Worked',
               style: TextStyle(fontSize: 20),
             ),
             Text(
               _count.toString(),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 debugPrint('Button clicked and the counter is $_count');
                 increaseCount();
               },
-              child: Text(
+              child: const Text(
                 'Count',
               ),
               style: ElevatedButton.styleFrom(
@@ -66,11 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ImageAssetLesson(),
+                    builder: (context) => const ImageAssetLesson(),
                   ),
                 );
               },
-              child: Text(
+              child: const Text(
                 'Go to image page',
               ),
             ),
@@ -82,11 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ButtonPage(),
+                    builder: (context) => const ButtonPage(),
                   ),
                 );
               },
-              child: Text(
+              child: const Text(
                 'Go to button page',
               ),
             ),
